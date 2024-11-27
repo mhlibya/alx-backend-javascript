@@ -1,6 +1,8 @@
-const fs = require('fs');
+import fs from 'fs';
 
-
+/**
+ * Reads the data of students in a CSV data file.
+ */
 const readDatabase = (dataPath) => new Promise((resolve, reject) => {
   if (!dataPath) {
     reject(new Error('Cannot load the database'));
@@ -38,4 +40,5 @@ const readDatabase = (dataPath) => new Promise((resolve, reject) => {
   }
 });
 
+export default readDatabase;
 module.exports = readDatabase;

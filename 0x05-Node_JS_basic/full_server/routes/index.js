@@ -1,5 +1,5 @@
-const AppController = require('../controllers/AppController');
-const StudentsController = require('../controllers/StudentsController');
+import AppController from '../controllers/AppController';
+import StudentsController from '../controllers/StudentsController';
 
 
 const mapRoutes = (app) => {
@@ -8,5 +8,5 @@ const mapRoutes = (app) => {
   app.get('/students/:major', StudentsController.getAllStudentsByMajor);
 };
 
-
+export default mapRoutes;
 module.exports = mapRoutes;
