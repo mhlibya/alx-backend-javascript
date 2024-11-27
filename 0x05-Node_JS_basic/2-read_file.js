@@ -1,4 +1,3 @@
-//reading data from a file
 const fs = require('fs');
 
 const countStudents = (path) => {
